@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base apparel coming soon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+        fontFamily: {
+            Josefin: ['Josefin Sans']
+        }
+
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-Josefin">
+    <div class="flex justify-center items-center">
+       
+        <div class="bg-[url(images/bg-pattern-desktop.svg)] flex justify-center items-center flex-col m-20 w-[500px] h-[500px] gap-4 ml-5">
+            <header>
+                <img class="w-20 h-7" src="/images/logo.svg" alt="logo of the main page">
+            </header>
+            <h1 class="text-5xl"><span class="text-[hsl(0,36%,70%)]">WE'RE</span><br> COMING <br>SOON</h1>
+            <p class="text-[10px] text-[hsl(0,36%,70%)] p-20">Hello fellow shoppers! We're currently building our new fashion store. 
+                Add your email below to stay up-to-date with announcements and our launch deals.</p>
+            <div class="flex flex-col">
+                <label for="button"></label>
+                <input id="input-value" class="rounded-full w-44 h-8 text-center border-gray-400 border-solid" type="text" placeholder="Email Adress"><br>
+                <button id="submit" class="bg-blue-500 text-white rounded-full">SUBMIT</button>
+                <label id="result" for="result"></label>   
+            </div>
+           
+        </div>
+
+        <div class="w-[500px] h-[500px]">
+            <img src="/images/hero-desktop.jpg" alt="">
+        </div>
+    </div>
+    <script src="/index.js">
+
+    </script>
+</body>
+</html>
